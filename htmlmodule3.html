@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>HTML Module 3 - HTML Forms, Semantic Elements, and Advanced Features</title>
+    <style>
+        /* Style for link buttons */
+        .button-link {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: white; /* Text color */
+            background-color: green; /* Background color */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: darkgreen; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Module 3: HTML Forms, Semantic Elements, and Advanced Features</h1>
+        <nav>
+            <ul>
+                <li><a href="htmlmodule1.html">Module 1</a></li>
+                <li><a href="htmlmodule2.html">Module 2</a></li>
+                <li><a href="htmlmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2><a href="#forms">1. Creating and Using HTML Forms</a></h2>
+        <div id="forms">
+            <p>
+                HTML forms are essential for collecting user input and facilitating interactions with web applications. They can include various input types such as text fields, radio buttons, checkboxes, and submit buttons. In this section, we will explore the structure and components of HTML forms.
+            </p>
+            <h3>Form Structure</h3>
+            <p>
+                A basic HTML form includes the <code>&lt;form&gt;</code> element, which wraps all form controls. Here’s a simple example:
+            </p>
+            <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            <a href="https://youtu.be/VLeERv_dR6Q?si=bB80VmqW3LGBB-yJ" target="_blank" class="button-link">Watch Form Video</a>
+        </div>
+
+        <h2><a href="#inputTypes">2. Understanding Input Types</a></h2>
+        <div id="inputTypes">
+            <p>
+                HTML provides various input types to enhance forms' usability and user experience. Common input types include <code>text</code>, <code>email</code>, <code>password</code>, <code>checkbox</code>, and <code>radio</code>. Each input type serves a specific purpose and allows users to enter data in a way that is appropriate for the expected input.
+            </p>
+            <h3>Common Input Types</h3>
+            <p>
+                - <strong>Text:</strong> Allows users to input a single line of text.
+                <br>
+                - <strong>Email:</strong> Validates email format.
+                <br>
+                - <strong>Password:</strong> Hides user input for security.
+            </p>
+            <a href="https://youtu.be/8qBPKXRUOnk?si=1a6-_rcvGSTSCgl0" target="_blank" class="button-link">Watch Input Types Video</a>
+        </div>
+
+        <h2><a href="#semanticElements">3. Semantic HTML Elements</a></h2>
+        <div id="semanticElements">
+            <p>
+                Semantic HTML elements provide meaning and context to the content they enclose. Using semantic elements improves accessibility, SEO, and maintainability of web pages. Common semantic elements include <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>.
+            </p>
+            <h3>Examples of Semantic Elements</h3>
+            <p>
+                - <code>&lt;header&gt;</code>: Represents the header of a document or section.
+                <br>
+                - <code>&lt;footer&gt;</code>: Represents the footer of a document or section.
+            </p>
+            <a href="https://youtu.be/FKfsmV6otEM?si=MEv3akJEYV9cNOIC" target="_blank" class="button-link">Watch Semantic HTML Video</a>
+        </div>
+
+        <h2><a href="#advancedFeatures">4. Advanced HTML Features: Data Lists and Autocomplete</a></h2>
+        <div id="advancedFeatures">
+            <p>
+                Data lists and autocomplete features significantly enhance user input by providing suggestions based on what the user is typing. The <code>&lt;datalist&gt;</code> element allows you to specify a set of pre-defined options for an <code>&lt;input&gt;</code> element.
+            </p>
+            <h3>Using Data Lists</h3>
+            <p>
+                Here’s an example of using a data list:
+            </p>
+            <pre><code>&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Safari"&gt;
+&lt;/datalist&gt;</code></pre>
+            <a href="https://youtu.be/IEyyj9tPtS0?si=xqCfK5ljECef_3yG" target="_blank" class="button-link">Watch Data List and Autocomplete Video</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

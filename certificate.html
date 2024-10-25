@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+        #certificate {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border: 10px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .certificate-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .certificate-body {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        #download-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="certificate">
+        <div class="certificate-header">Certificate of Completion</div>
+        <div class="content">
+            <p>This is to certify that</p>
+            <h2 id="participant-name">[Participant Name]</h2>
+            <p>has successfully completed the Java quiz with a score of</p>
+            <h2 id="participant-score">[Score]</h2>
+            <p>Congratulations!</p>
+        </div>
+        <div class="certificate-footer">
+            <p>Presented on: <span id="date"></span></p>
+        </div>
+    </div>
+    <button id="download-btn" onclick="downloadCertificate()">Download Certificate</button>
+
+    <!-- Include Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script>
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function showCertificate(name, score) {
+            document.getElementById('participant-name').textContent = name || 'Participant';
+            document.getElementById('participant-score').textContent = score || '0';
+            document.getElementById('date').textContent = new Date().toLocaleDateString();
+        }
+
+        function downloadCertificate() {
+            const certificateElement = document.getElementById('certificate');
+
+            html2canvas(certificateElement).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jspdf.jsPDF({
+                    orientation: 'landscape',
+                    unit: 'mm',
+                    format: [canvas.width, canvas.height]
+                });
+
+                pdf.addImage(imgData, 'PNG', 0, 0, canvas.width * 0.264583, canvas.height * 0.264583);
+                pdf.save('Certificate.pdf');
+            });
+        }
+
+        window.onload = function() {
+            const name = getQueryParameter('name') || 'Participant';
+            const score = getQueryParameter('score') || '0';
+            showCertificate(name, score);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>Java Module 3 - Basic Input and Output in Java</title>
+    <style>
+        .video-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .video-button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Module 3: Basic Input and Output in Java</h1>
+        <nav>
+            <ul>
+                <li><a href="javamodule1.html">Module 1</a></li>
+                <li><a href="javamodule2.html">Module 2</a></li>
+                <li><a href="javamodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Introduction to Input and Output</h2>
+        <p>
+            Input and Output (I/O) in Java refers to the process of receiving data from a user or a file (input) 
+            and displaying data on the screen or saving it to a file (output). Java provides several classes and methods for handling I/O operations.
+        </p>
+        <p>The most common classes for I/O operations are:</p>
+        <ul>
+            <li><strong>Scanner:</strong> Used for reading input from various sources like keyboard, files, etc.</li>
+            <li><strong>PrintStream:</strong> Used for writing output to various destinations.</li>
+        </ul>
+        <a class="video-button" href="https://youtu.be/ScUJx4aWRi0?si=9b-yA7PKoT7mqIlC" target="_blank">Watch Video on Introduction to Input and Output</a>
+
+        <h2>2. Using the Scanner Class</h2>
+        <p>
+            The <code>Scanner</code> class is part of the <code>java.util</code> package and is used to read input from various sources. 
+            Here is an example of using the <code>Scanner</code> class to read user input:
+        </p>
+        <pre><code>
+import java.util.Scanner;
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        scanner.close();
+    }
+}
+        </code></pre>
+        <a class="video-button" href="https://youtu.be/ScUJx4aWRi0?si=9b-yA7PKoT7mqIlC" target="_blank">Watch Video on Using the Scanner Class</a>
+
+        <h2>3. Outputting Data with PrintStream</h2>
+        <p>
+            The <code>PrintStream</code> class provides various methods to output data to the console or files. 
+            Here’s an example of using <code>System.out</code> to print messages to the console:
+        </p>
+        <pre><code>
+public class OutputExample {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Java!");
+        System.out.printf("Your score is: %d%n", 85);
+    }
+}
+        </code></pre>
+        <a class="video-button" href="https://youtu.be/LusTv0RlnSU?si=2zfXTKmJzNRh4qyg" target="_blank">Watch Video on Outputting Data</a>
+
+        <h2>4. Reading Data from Files</h2>
+        <p>
+            Java provides classes such as <code>FileReader</code> and <code>BufferedReader</code> for reading data from files. 
+            Here's a simple example:
+        </p>
+        <pre><code>
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReadExample {
+    public static void main(String[] args) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("input.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+        </code></pre>
+        <a class="video-button" href="https://youtu.be/M8xFzcWiORE?si=blEA2S7kAe0UOXrX" target="_blank">Watch Video on Reading Data from Files</a>
+
+        <h2>5. Writing Data to Files</h2>
+        <p>
+            To write data to files, you can use the <code>FileWriter</code> and <code>BufferedWriter</code> classes. 
+            Here's how you can write text to a file:
+        </p>
+        <pre><code>
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriteExample {
+    public static void main(String[] args) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
+            writer.write("Hello, World!");
+            writer.newLine();
+            writer.write("Welcome to file handling in Java.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+        </code></pre>
+        <a class="video-button" href="https://www.youtube.com/watch?v=tdqlv95hxTw" target="_blank">Watch Video on Writing Data to Files</a>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

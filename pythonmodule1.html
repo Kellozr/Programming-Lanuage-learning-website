@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>Python Module 1 - Introduction to Python and Basic Syntax</title>
+    <style>
+        .video-button {
+            display: inline-block;
+            background-color: blue; /* Change to blue color */
+            color: white; /* Text color */
+            padding: 10px 15px; /* Padding */
+            margin: 5px 0; /* Margin */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .video-button:hover {
+            background-color: darkblue; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Module 1: Introduction to Python and Basic Syntax</h1>
+        <nav>
+            <ul>
+                <li><a href="pythonmodule1.html">Module 1</a></li>
+                <li><a href="pythonmodule2.html">Module 2</a></li>
+                <li><a href="pythonmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Introduction to Python</h2>
+        <p>
+            Python is a high-level, interpreted programming language that emphasizes code readability and simplicity. It was created by Guido van Rossum and first released in 1991. Python is designed to be easy to learn and fun to use, with syntax that is similar to plain English.
+        </p>
+        <h3>1.1 Why Learn Python?</h3>
+        <p>
+            Python is an excellent language for beginners due to its simplicity and versatility. It is used in a wide range of applications, from web development to artificial intelligence, making it a valuable skill for developers. Some reasons to learn Python include:
+        </p>
+        <ul>
+            <li><strong>Readable Syntax:</strong> Python’s syntax allows developers to write code that is easy to read and understand, reducing the cost of program maintenance.</li>
+            <li><strong>Extensive Libraries:</strong> Python offers a vast collection of libraries and frameworks that simplify development, such as <code>NumPy</code> for numerical computations, <code>Pandas</code> for data analysis, <code>Flask</code> and <code>Django</code> for web development, and <code>TensorFlow</code> for machine learning.</li>
+            <li><strong>Community Support:</strong> Python has a large and active community, making it easier to find help, tutorials, and libraries for almost any purpose.</li>
+            <li><strong>Cross-Platform:</strong> Python runs on multiple platforms (Windows, macOS, Linux), allowing developers to create software that works across different environments.</li>
+        </ul>
+        <h3>1.2 Python Applications</h3>
+        <p>Python is used in various fields, such as:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Frameworks like Django and Flask make it easy to build web applications.</li>
+            <li><strong>Data Science and Machine Learning:</strong> Libraries like NumPy, Pandas, and TensorFlow allow for powerful data analysis and AI model creation.</li>
+            <li><strong>Automation:</strong> Python is often used to automate repetitive tasks, such as file manipulation, data scraping, and more.</li>
+            <li><strong>Game Development:</strong> Libraries like <code>pygame</code> make it possible to develop 2D games in Python.</li>
+        </ul>
+        
+        <a class="video-button" href="https://youtu.be/DInMru2Eq6E?si=uagOh8h9AzfCfatx" target="_blank">Watch Introduction to Python Video</a>
+
+        <h2>2. Setting Up Python</h2>
+        <p>
+            To begin coding in Python, you need to install Python on your computer. Follow these steps to set up Python:
+        </p>
+        <h3>2.1 Downloading Python</h3>
+        <ol>
+            <li><strong>Visit the Official Website:</strong> Go to the <a href="https://www.python.org/downloads/" target="_blank">Python website</a> and download the latest version for your operating system.</li>
+            <li><strong>Install Python:</strong> Run the installer and make sure to check the option to "Add Python to PATH" during installation. This allows you to run Python commands directly from your terminal or command prompt.</li>
+            <li><strong>Verify Installation:</strong> After installation, open a terminal and type <code>python --version</code> or <code>python3 --version</code> to check the installed version.</li>
+        </ol>
+        <h3>2.2 Choosing an IDE</h3>
+        <p>
+            An Integrated Development Environment (IDE) helps you write, edit, and debug Python code efficiently. Some popular Python IDEs are:
+        </p>
+        <ul>
+            <li><strong>PyCharm:</strong> A full-featured IDE with debugging, code completion, and version control integration.</li>
+            <li><strong>Visual Studio Code:</strong> A lightweight editor with extensive plugins for Python, suitable for beginners and advanced users.</li>
+            <li><strong>Jupyter Notebook:</strong> Ideal for data analysis and scientific computing, allowing code execution and visualization in a browser.</li>
+            <li><strong>Spyder:</strong> A scientific Python IDE that integrates with libraries like NumPy and Matplotlib.</li>
+        </ul>
+        
+        <a class="video-button" href="https://youtu.be/ExJHGEn6gt0?si=m0FuK1mzUKLw2EU4" target="_blank">Watch Setting Up Python Video</a>
+
+        <h2>3. Basic Syntax in Python</h2>
+        <p>
+            Python syntax is designed to be clean and straightforward, emphasizing readability. Here are some essential aspects of Python syntax to get started:
+        </p>
+
+        <h3>3.1 Python Comments</h3>
+        <p>
+            Comments are used to explain the purpose of code or to provide additional context. Python ignores comments during execution. They come in two forms:
+        </p>
+        <ul>
+            <li><strong>Single-Line Comments:</strong> Start a line with <code>#</code> to comment it out.
+                <pre><code># This is a comment
+print("This will run, but the comment will not be executed")
+                </code></pre>
+            </li>
+            <li><strong>Multi-Line Comments:</strong> Use triple quotes for comments that span multiple lines.
+                <pre><code>"""
+This is a multi-line comment.
+It spans multiple lines.
+"""
+print("Comments are useful for documentation.")
+                </code></pre>
+            </li>
+        </ul>
+
+        <h3>3.2 Variables and Data Types</h3>
+        <p>
+            Variables in Python are containers for storing data values. Python is dynamically typed, meaning you don’t need to declare variable types explicitly. The type is inferred from the assigned value. Common data types include:
+        </p>
+        <ul>
+            <li><strong>Integers:</strong> Whole numbers, both positive and negative, without decimals.
+                <pre><code>x = 10
+y = -42</code></pre>
+            </li>
+            <li><strong>Floats:</strong> Numbers with a decimal point.
+                <pre><code>pi = 3.14159
+temperature = -0.5</code></pre>
+            </li>
+            <li><strong>Strings:</strong> Text data enclosed in single or double quotes.
+                <pre><code>name = "Alice"
+message = 'Hello, World!'</code></pre>
+            </li>
+            <li><strong>Booleans:</strong> Represents <code>True</code> or <code>False</code>.
+                <pre><code>is_student = True
+has_license = False</code></pre>
+            </li>
+            <li><strong>Lists:</strong> Ordered collections of items.
+                <pre><code>fruits = ["apple", "banana", "cherry"]
+numbers = [1, 2, 3, 4, 5]</code></pre>
+            </li>
+        </ul>
+        <p>Variables can be reassigned with new values as needed:</p>
+        <pre><code>x = 5
+x = "Now I am a string"</code></pre>
+        <p>It is important to use variable names that are descriptive and follow Python's naming conventions.</p>
+
+        <h3>3.3 Printing Output</h3>
+        <p>
+            The <code>print()</code> function displays output to the screen. It is useful for debugging and displaying results:
+        </p>
+        <pre><code>print("Hello, Python!")
+name = "Alice"
+print("Hello, " + name)
+age = 25
+print(f"Hello, {name}. You are {age} years old.")</code></pre>
+        <p>Using f-strings (formatted string literals) allows you to embed expressions inside string literals, making it easier to format output.</p>
+
+        <a class="video-button" href="https://youtu.be/7IWOYhfAcVg?si=i9ai8liUYyHFYjNo" target="_blank">Watch Basic Syntax Video</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

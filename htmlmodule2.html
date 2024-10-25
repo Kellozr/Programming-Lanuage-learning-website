@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>HTML Module 2 - HTML Elements, Attributes, and Multimedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #28a745; /* Green background */
+            color: white; /* White text */
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Module 2: Elements, Attributes, and Multimedia</h1>
+        <nav>
+            <ul>
+                <li><a href="htmlmodule1.html">Module 1</a></li>
+                <li><a href="htmlmodule2.html">Module 2</a></li>
+                <li><a href="htmlmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Understanding HTML Elements</h2>
+        <p>An HTML element consists of a start tag, content, and an end tag, like <code>&lt;p&gt;Content&lt;/p&gt;</code>. Elements can be nested to form a hierarchy.</p>
+        <button onclick="window.open('https://www.youtube.com/watch?v=G2eEThIWeP4', '_blank')">Watch Video on HTML Elements</button>
+
+        <h2>2. Block-level vs. Inline Elements</h2>
+        <p>Elements are classified as:</p>
+        <ul>
+            <li><strong>Block-level:</strong> Takes full width, e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>.</li>
+            <li><strong>Inline:</strong> Takes only necessary width, e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>.</li>
+        </ul>
+        <pre><code>
+&lt;div&gt;
+    &lt;p&gt;Paragraph inside a block-level element.&lt;/p&gt;
+    &lt;span&gt;Inline element.&lt;/span&gt;
+&lt;/div&gt;
+        </code></pre>
+        <button onclick="window.open('https://www.youtube.com/watch?v=WT5y8S0JtQk', '_blank')">Watch Video on Block vs Inline Elements</button>
+
+        <h2>3. HTML Attributes</h2>
+        <p>Attributes provide additional info, written within the start tag. Examples include <code>href</code> and <code>src</code>.</p>
+        <pre><code>
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+&lt;img src="image.jpg" alt="Image description"&gt;
+        </code></pre>
+        <button onclick="window.open('https://youtu.be/yMX901oVtn8?si=30lK3Zx58eqjKXcC', '_blank')">Watch Video on HTML Attributes</button>
+
+        <h2>4. Adding Multimedia</h2>
+        <p>Use <code>&lt;img&gt;</code> for images and <code>&lt;video&gt;</code> for videos:</p>
+        <pre><code>
+&lt;img src="nature.jpg" alt="Nature" width="300" height="200"&gt;
+&lt;video controls width="500"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+        </code></pre>
+        <button onclick="window.open('https://youtu.be/z6H22xGAZEA?si=V34fKMAw_7ENg8HO', '_blank')">Watch Video on Adding Multimedia</button>
+
+        <h2>5. Using Lists</h2>
+        <p>HTML supports:</p>
+        <ul>
+            <li><strong>Unordered Lists:</strong> <code>&lt;ul&gt;</code></li>
+            <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+            <li><strong>Ordered Lists:</strong> <code>&lt;ol&gt;</code></li>
+            <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Step 1&lt;/li&gt;
+    &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+        </ul>
+        <button onclick="window.open('https://youtu.be/N69xumSjg5Q?si=u-IqvZUb4nW0aTaB', '_blank')">Watch Video on Using Lists</button>
+
+        <h2>6. HTML Tables</h2>
+        <p>Use <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, and <code>&lt;td&gt;</code> for structured data:</p>
+        <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+        <button onclick="window.open('https://youtu.be/RGJkOztXUvc?si=mgCfisM46TphTAVI', '_blank')">Watch Video on HTML Tables</button>
+
+        <h2>7. Test Your Knowledge</h2>
+        <p>Take this quiz:</p>
+        <form action="submit_test.html" method="post">
+            <label for="q1">1. What is the difference between block-level and inline elements?</label>
+            <input type="text" id="q1" name="q1" required><br>
+            <label for="q2">2. How do you add an image to an HTML page?</label>
+            <input type="text" id="q2" name="q2" required><br>
+            <label for="q3">3. Write the HTML code for a link that opens in a new tab.</label>
+            <textarea id="q3" name="q3" required></textarea><br>
+            <button type="submit">Submit Answers</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

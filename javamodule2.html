@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>Java Module 2 - Basic Concepts in Java</title>
+    <style>
+        .video-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .video-button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Module 2: Basic Concepts in Java</h1>
+        <nav>
+            <ul>
+                <li><a href="javamodule1.html">Module 1</a></li>
+                <li><a href="javamodule2.html">Module 2</a></li>
+                <li><a href="javamodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Structure of a Java Program</h2>
+        <p>
+            Understanding the structure of a Java program is essential for writing and organizing code effectively. 
+            A typical Java program consists of classes, methods, variables, and statements. Here is a breakdown of a simple Java program:
+        </p>
+        <pre><code>
+public class Example {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Java Programming!");
+    }
+}
+        </code></pre>
+        <p>Let's break down the components of this code:</p>
+        <ul>
+            <li><strong>Class Declaration:</strong> The program starts with <code>public class Example</code>. This defines a class named <code>Example</code>, and in Java, all code must be inside a class.</li>
+            <li><strong>Main Method:</strong> The <code>main</code> method (<code>public static void main(String[] args)</code>) is the entry point of any Java application. When you run a Java program, the JVM looks for the <code>main</code> method to start execution.</li>
+            <li><strong>Statements:</strong> Inside the <code>main</code> method, <code>System.out.println</code> prints text to the console. Each statement in Java ends with a semicolon (<code>;</code>).</li>
+        </ul>
+        <a class="video-button" href="https://youtu.be/xYHNQNFTxDA?si=6axNLc_f5rvxyKQi" target="_blank">Watch Video on Structure of a Java Program</a>
+        <p>Java programs can include multiple classes, and you can use additional methods within those classes to structure complex logic and behavior.</p>
+
+        <h2>2. Java Data Types</h2>
+        <p>
+            Java is a strongly-typed language, which means every variable must have a declared type. There are two categories of data types in Java:
+        </p>
+        <ul>
+            <li><strong>Primitive Data Types:</strong> Java provides eight primitive data types, which represent simple values:
+                <ul>
+                    <li><strong>byte:</strong> 8-bit integer, range from -128 to 127.</li>
+                    <li><strong>short:</strong> 16-bit integer, range from -32,768 to 32,767.</li>
+                    <li><strong>int:</strong> 32-bit integer, range from -2<sup>31</sup> to 2<sup>31</sup>-1.</li>
+                    <li><strong>long:</strong> 64-bit integer, range from -2<sup>63</sup> to 2<sup>63</sup>-1.</li>
+                    <li><strong>float:</strong> 32-bit floating-point number, used for precise values like currency.</li>
+                    <li><strong>double:</strong> 64-bit floating-point number, commonly used for decimal values.</li>
+                    <li><strong>char:</strong> 16-bit Unicode character, used to store characters.</li>
+                    <li><strong>boolean:</strong> Represents <code>true</code> or <code>false</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Non-Primitive Data Types:</strong> These are reference types and include classes, arrays, strings, and interfaces. They store references to the memory locations where the actual data is stored.</li>
+        </ul>
+        <a class="video-button" href="https://youtu.be/Le25I331_yU?si=wBv4dcuEETWPoSm4" target="_blank">Watch Video on Java Data Types</a>
+
+        <h2>3. Variables in Java</h2>
+        <p>
+            Variables are used to store data in Java. Each variable must be declared with a type before use. Here are different types of variables:
+        </p>
+        <ul>
+            <li><strong>Local Variables:</strong> Declared inside methods or blocks and are accessible only within those methods or blocks. They do not retain values after the method completes.</li>
+            <li><strong>Instance Variables:</strong> Declared inside a class but outside methods. These variables are specific to each object of the class.</li>
+            <li><strong>Static Variables:</strong> Declared with the <code>static</code> keyword and belong to the class rather than an instance. All instances of the class share the same value of a static variable.</li>
+        </ul>
+        <p>Example of declaring variables:</p>
+        <pre><code>
+int age = 25;  // Local variable
+double salary = 45000.50;  // Local variable
+static String companyName = "Tech Solutions";  // Static variable
+        </code></pre>
+        <a class="video-button" href="https://youtu.be/9RCuKrze_-k?si=_zTWC7zuuWgh-DHt" target="_blank">Watch Video on Variables in Java</a>
+
+        <h2>4. Control Flow Statements</h2>
+        <p>
+            Control flow statements allow you to control the execution flow of a program. Java provides several control flow mechanisms:
+        </p>
+        <ul>
+            <li><strong>If-Else Statement:</strong> Used to execute a block of code conditionally based on whether an expression evaluates to true or false.
+                <pre><code>
+int number = 10;
+if (number > 0) {
+    System.out.println("Positive number");
+} else {
+    System.out.println("Negative number or zero");
+}
+                </code></pre>
+            </li>
+            <li><strong>Switch Statement:</strong> Allows multi-way branching. It is used when there are multiple possible outcomes for a given expression.
+                <pre><code>
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    default:
+        System.out.println("Other day");
+}
+                </code></pre>
+            </li>
+            <li><strong>For Loop:</strong> Used for iterating over a block of code a specific number of times.
+                <pre><code>
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+                </code></pre>
+            </li>
+            <li><strong>While Loop:</strong> Repeats a block of code as long as a condition is true.
+                <pre><code>
+int count = 0;
+while (count < 5) {
+    System.out.println("Count: " + count);
+    count++;
+}
+                </code></pre>
+            </li>
+            <li><strong>Do-While Loop:</strong> Similar to the <code>while</code> loop, but ensures that the block of code is executed at least once.
+                <pre><code>
+int number = 0;
+do {
+    System.out.println("Number: " + number);
+    number++;
+} while (number < 3);
+                </code></pre>
+            </li>
+        </ul>
+        <a class="video-button" href="https://youtu.be/pnn2VTSr1Ko?si=Qze5GnPHSGACH5Qm" target="_blank">Watch Video on Control Flow Statements</a>
+        <p>Control flow statements are essential for creating dynamic, responsive programs that can react to user input and varying conditions.</p>
+
+        <h2>5. Basic Operators in Java</h2>
+        <p>
+            Java provides a rich set of operators for performing arithmetic, comparison, and logical operations:
+        </p>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong> Used for mathematical operations.
+                <pre><code>
+int a = 10, b = 5;
+System.out.println(a + b);  // Addition
+System.out.println(a - b);  // Subtraction
+System.out.println(a * b);  // Multiplication
+System.out.println(a / b);  // Division
+                </code></pre>
+            </li>
+            <li><strong>Comparison Operators:</strong> Used to compare two values.
+                <pre><code>
+System.out.println(a == b);  // Equal to
+System.out.println(a != b);  // Not equal to
+                </code></pre>
+            </li>
+            <li><strong>Logical Operators:</strong> Used for logical operations.
+                <pre><code>
+boolean result = (a > b) && (b > 0);  // Logical AND
+                </code></pre>
+            </li>
+        </ul>
+        <a class="video-button" href="https://youtu.be/pnn2VTSr1Ko?si=Qze5GnPHSGACH5Qm" target="_blank">Watch Video on Basic Operators in Java</a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Code Wiz. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

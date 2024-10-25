@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Test</title>
+    <link rel="stylesheet" href="javatest.css">
+    <script src="javatest.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Java Programming Test</h1>
+        <p>Answer all questions and get a certificate if you score more than 80%!</p>
+    </header>
+
+    <form id="javaTest">
+        <div class="question">
+            <p>1. Which of these is not a feature of Java?</p>
+            <input type="radio" name="q1" value="A" required> A. Object-oriented<br>
+            <input type="radio" name="q1" value="B"> B. Platform-independent<br>
+            <input type="radio" name="q1" value="C"> C. Compiled<br>
+            <input type="radio" name="q1" value="D"> D. Interpreted language<br>
+        </div>
+        <div class="question">
+            <p>2. What is the extension of Java code files?</p>
+            <input type="radio" name="q2" value="A" required> A. .js<br>
+            <input type="radio" name="q2" value="B"> B. .java<br>
+            <input type="radio" name="q2" value="C"> C. .class<br>
+            <input type="radio" name="q2" value="D"> D. .txt<br>
+        </div>
+        <div class="question">
+            <p>3. Which of the following is used to find and fix bugs in Java programs?</p>
+            <input type="radio" name="q3" value="A" required> A. JVM<br>
+            <input type="radio" name="q3" value="B"> B. JDB<br>
+            <input type="radio" name="q3" value="C"> C. JDK<br>
+            <input type="radio" name="q3" value="D"> D. JRE<br>
+        </div>
+        <div class="question">
+            <p>4. What is the output of `System.out.println("Hello World");`?</p>
+            <input type="radio" name="q4" value="A" required> A. hello world<br>
+            <input type="radio" name="q4" value="B"> B. Hello world<br>
+            <input type="radio" name="q4" value="C"> C. Hello World<br>
+            <input type="radio" name="q4" value="D"> D. Compilation error<br>
+        </div>
+        <div class="question">
+            <p>5. Which keyword is used for inheritance in Java?</p>
+            <input type="radio" name="q5" value="A" required> A. this<br>
+            <input type="radio" name="q5" value="B"> B. super<br>
+            <input type="radio" name="q5" value="C"> C. extends<br>
+            <input type="radio" name="q5" value="D"> D. implement<br>
+        </div>
+        <div class="question">
+            <p>6. Which of these is a valid keyword in Java?</p>
+            <input type="radio" name="q6" value="A" required> A. null<br>
+            <input type="radio" name="q6" value="B"> B. NULL<br>
+            <input type="radio" name="q6" value="C"> C. Null<br>
+            <input type="radio" name="q6" value="D"> D. nil<br>
+        </div>
+        <div class="question">
+            <p>7. Which method must be implemented by all threads?</p>
+            <input type="radio" name="q7" value="A" required> A. run()<br>
+            <input type="radio" name="q7" value="B"> B. start()<br>
+            <input type="radio" name="q7" value="C"> C. stop()<br>
+            <input type="radio" name="q7" value="D"> D. wait()<br>
+        </div>
+        <div class="question">
+            <p>8. What is bytecode in the context of Java?</p>
+            <input type="radio" name="q8" value="A" required> A. The code written by the programmer<br>
+            <input type="radio" name="q8" value="B"> B. The code generated after compilation<br>
+            <input type="radio" name="q8" value="C"> C. The code understood by the JVM<br>
+            <input type="radio" name="q8" value="D"> D. Both B and C<br>
+        </div>
+        <div class="question">
+            <p>9. What is the size of `int` in Java?</p>
+            <input type="radio" name="q9" value="A" required> A. 4 bytes<br>
+            <input type="radio" name="q9" value="B"> B. 8 bytes<br>
+            <input type="radio" name="q9" value="C"> C. 2 bytes<br>
+            <input type="radio" name="q9" value="D"> D. Depends on the system<br>
+        </div>
+        <div class="question">
+            <p>10. What is the default value of a boolean variable?</p>
+            <input type="radio" name="q10" value="A" required> A. true<br>
+            <input type="radio" name="q10" value="B"> B. false<br>
+            <input type="radio" name="q10" value="C"> C. 0<br>
+            <input type="radio" name="q10" value="D"> D. null<br>
+        </div>
+        <div class="question">
+            <p>11. Which operator is used to compare two values?</p>
+            <input type="radio" name="q11" value="A" required> A. =<br>
+            <input type="radio" name="q11" value="B"> B. ==<br>
+            <input type="radio" name="q11" value="C"> C. ===<br>
+            <input type="radio" name="q11" value="D"> D. equal()<br>
+        </div>
+        <div class="question">
+            <p>12. Which method is called to start a thread in Java?</p>
+            <input type="radio" name="q12" value="A" required> A. run()<br>
+            <input type="radio" name="q12" value="B"> B. start()<br>
+            <input type="radio" name="q12" value="C"> C. execute()<br>
+            <input type="radio" name="q12" value="D"> D. begin()<br>
+        </div>
+        <div class="question">
+            <p>13. How many threads can be executed at a time?</p>
+            <input type="radio" name="q13" value="A" required> A. One<br>
+            <input type="radio" name="q13" value="B"> B. Multiple<br>
+            <input type="radio" name="q13" value="C"> C. Two<br>
+            <input type="radio" name="q13" value="D"> D. Depends on the JVM<br>
+        </div>
+        <div class="question">
+            <p>14. Which of these is an example of polymorphism?</p>
+            <input type="radio" name="q14" value="A" required> A. Method overloading<br>
+            <input type="radio" name="q14" value="B"> B. Method overriding<br>
+            <input type="radio" name="q14" value="C"> C. Both A and B<br>
+            <input type="radio" name="q14" value="D"> D. None of the above<br>
+        </div>
+        <div class="question">
+            <p>15. Which of these is a type of class in Java?</p>
+            <input type="radio" name="q15" value="A" required> A. Static class<br>
+            <input type="radio" name="q15" value="B"> B. Abstract class<br>
+            <input type="radio" name="q15" value="C"> C. Final class<br>
+            <input type="radio" name="q15" value="D"> D. All of the above<br>
+        </div>
+        <div class="question">
+            <p>16. What is the base class for all classes in Java?</p>
+            <input type="radio" name="q16" value="A" required> A. Object<br>
+            <input type="radio" name="q16" value="B"> B. Base<br>
+            <input type="radio" name="q16" value="C"> C. Super<br>
+            <input type="radio" name="q16" value="D"> D. Parent<br>
+        </div>
+        <div class="question">
+            <p>17. Which exception is thrown when an array is accessed with an illegal index?</p>
+            <input type="radio" name="q17" value="A" required> A. NullPointerException<br>
+            <input type="radio" name="q17" value="B"> B. ArrayIndexOutOfBoundsException<br>
+            <input type="radio" name="q17" value="C"> C. ClassCastException<br>
+            <input type="radio" name="q17" value="D"> D. IllegalArgumentException<br>
+        </div>
+        <div class="question">
+            <p>18. Which of these is the correct way to declare a variable in Java?</p>
+            <input type="radio" name="q18" value="A" required> A. int a;<br>
+            <input type="radio" name="q18" value="B"> B. a int;<br>
+            <input type="radio" name="q18" value="C"> C. int a = 0;<br>
+            <input type="radio" name="q18" value="D"> D. Both A and C<br>
+        </div>
+        <div class="question">
+            <p>19. What is the output of `System.out.println(5 + "5");`?</p>
+            <input type="radio" name="q19" value="A" required> A. 10<br>
+            <input type="radio" name="q19" value="B"> B. 55<br>
+            <input type="radio" name="q19" value="C"> C. 5<br>
+            <input type="radio" name="q19" value="D"> D. Compilation error<br>
+        </div>
+        <div class="question">
+            <p>20. Which of these is not a valid data type in Java?</p>
+            <input type="radio" name="q20" value="A" required> A. int<br>
+            <input type="radio" name="q20" value="B"> B. float<br>
+            <input type="radio" name="q20" value="C"> C. double<br>
+            <input type="radio" name="q20" value="D"> D. real<br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="hidden"></div>
+    <div id="certificate" class="hidden">
+        <h2>Congratulations!</h2>
+        <p>You have completed the Java Test.</p>
+        <button id="downloadCertificate">Download Certificate</button>
+    </div>
+</body>
+</html>

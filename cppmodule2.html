@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>C++ Module 2 - Data Types, Variables, and Operators</title>
+    <style>
+        .video-button {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-button:hover {
+            background-color: #0056b3;
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>C++ Module 2: Data Types, Variables, and Operators</h1>
+        <nav>
+            <ul>
+                <li><a href="cppmodule1.html">Module 1</a></li>
+                <li><a href="cppmodule2.html">Module 2</a></li>
+                <li><a href="cppmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Understanding Data Types</h2>
+        <p>
+            In C++, data types are essential for defining the type of data a variable can hold. The primary data types in C++ can be classified into three categories:
+        </p>
+        <ul>
+            <li><strong>Primitive Data Types:</strong>
+                <ul>
+                    <li><code>int</code>: Used for integers. Example: <code>int age = 25;</code></li>
+                    <li><code>float</code>: Used for floating-point numbers. Example: <code>float salary = 50000.50;</code></li>
+                    <li><code>double</code>: Used for double-precision floating-point numbers. Example: <code>double pi = 3.14159;</code></li>
+                    <li><code>char</code>: Used for single characters. Example: <code>char grade = 'A';</code></li>
+                    <li><code>bool</code>: Used for boolean values. Example: <code>bool isPassed = true;</code></li>
+                </ul>
+            </li>
+            <li><strong>Derived Data Types:</strong>
+                <ul>
+                    <li><code>array</code>: A collection of elements of the same type. Example: <code>int numbers[5] = {1, 2, 3, 4, 5};</code></li>
+                    <li><code>pointer</code>: A variable that holds the address of another variable. Example: <code>int *ptr = &age;</code></li>
+                    <li><code>structure</code>: A user-defined data type that groups different data types. Example:
+                        <pre><code>
+struct Person {
+    string name;
+    int age;
+    float height;
+};
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>User-Defined Data Types:</strong>
+                <ul>
+                    <li><code>class</code>: Defines a blueprint for objects. Example:
+                        <pre><code>
+class Car {
+public:
+    string brand;
+    int year;
+};
+                        </code></pre>
+                    </li>
+                    <li><code>enum</code>: A user-defined type consisting of a set of named integer constants. Example:
+                        <pre><code>
+enum Day {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Choosing the correct data type is crucial for memory management and performance optimization.</p>
+        <div class="video-container">
+            <a href="https://youtu.be/cnT1oW5_ePM?si=3jYoTF2A0KJG4uqW" target="_blank" class="video-button">Watch: Understanding Data Types</a>
+        </div>
+
+        <h2>2. Declaring Variables</h2>
+        <p>
+            A variable in C++ is a named storage location in memory that can hold data. To declare a variable, you need to specify its data type and name. The syntax is:
+        </p>
+        <pre><code>data_type variable_name;</code></pre>
+        <p>For example:</p>
+        <pre><code>int age;</code></pre>
+        <p>You can also initialize a variable at declaration:</p>
+        <pre><code>float weight = 65.5;</code></pre>
+        <p>Multiple variables can be declared in one line:</p>
+        <pre><code>int a, b, c;</code></pre>
+        <p>Variable names must start with a letter or underscore, followed by letters, digits, or underscores. C++ is case-sensitive, so <code>Age</code> and <code>age</code> are different.</p>
+        <div class="video-container">
+            <a href="https://youtu.be/hCTXGGInH8M?si=EXTkL7FdoQW31fno" target="_blank" class="video-button">Watch: Declaring Variables in C++</a>
+        </div>
+
+        <h2>3. Operators in C++</h2>
+        <p>C++ provides a rich set of operators used to perform operations on variables and values:</p>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong>
+                <ul>
+                    <li><code>+</code>: Addition</li>
+                    <li><code>-</code>: Subtraction</li>
+                    <li><code>*</code>: Multiplication</li>
+                    <li><code>/</code>: Division</li>
+                    <li><code>%</code>: Modulus</li>
+                </ul>
+            </li>
+            <li><strong>Relational Operators:</strong>
+                <ul>
+                    <li><code>==</code>: Equal to</li>
+                    <li><code>!=</code>: Not equal to</li>
+                    <li><code>&gt;</code>: Greater than</li>
+                    <li><code>&lt;</code>: Less than</li>
+                    <li><code>&gt;=</code>: Greater than or equal to</li>
+                    <li><code>&lt;=</code>: Less than or equal to</li>
+                </ul>
+            </li>
+            <li><strong>Logical Operators:</strong>
+                <ul>
+                    <li><code>&&</code>: Logical AND</li>
+                    <li><code>||</code>: Logical OR</li>
+                    <li><code>!</code>: Logical NOT</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="video-container">
+            <a href="https://youtu.be/JBgZxnAj4hg?si=hqg47Ddds5F8XHo1" target="_blank" class="video-button">Watch: Operators in C++</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Code Wiz - Learn C++ Step by Step</p>
+        </footer>
+    </div>
+</body>
+</html>

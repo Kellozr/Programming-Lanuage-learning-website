@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Test</title>
+    <link rel="stylesheet" href="pythontest.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Python Test</h1>
+        <p>Answer the following questions:</p>
+    </header>
+    <form id="pythonTest">
+        <div class="question">
+            <p>1. Who developed Python Programming Language?</p>
+            <input type="radio" name="q1" value="A" required> A. Wick van Rossum<br>
+            <input type="radio" name="q1" value="B"> B. Rasmus Lerdorf<br>
+            <input type="radio" name="q1" value="C"> C. Guido van Rossum<br>
+            <input type="radio" name="q1" value="D"> D. Niene Stom<br>
+        </div>
+        <div class="question">
+            <p>2. What will be the value of the following Python expression? 4 + 3 % 5</p>
+            <input type="radio" name="q2" value="A" required> A. 7<br>
+            <input type="radio" name="q2" value="B"> B. 2<br>
+            <input type="radio" name="q2" value="C"> C. 4<br>
+            <input type="radio" name="q2" value="D"> D. 1<br>
+        </div>
+        <div class="question">
+            <p>3. Which of the following character is used to give single-line comments in Python?</p>
+            <input type="radio" name="q3" value="A" required> A. // <br>
+            <input type="radio" name="q3" value="B"> B. #<br>
+            <input type="radio" name="q3" value="C"> C. !<br>
+            <input type="radio" name="q3" value="D"> D. /*<br>
+        </div>
+        <div class="question">
+            <p>4. What is the order of precedence in python?</p>
+            <input type="radio" name="q4" value="A" required> A. Exponential, Parentheses, Multiplication, Division, Addition, Subtraction<br>
+            <input type="radio" name="q4" value="B"> B. Exponential, Parentheses, Division, Multiplication, Addition, Subtraction<br>
+            <input type="radio" name="q4" value="C"> C. Parentheses, Exponential, Multiplication, Addition, Division, Subtraction<br>
+            <input type="radio" name="q4" value="D"> D. Parentheses, Exponential, Multiplication, Division, Addition, Subtraction<br>
+        </div>
+        <div class="question">
+            <p>5. Which of the following functions is a built-in function in python?</p>
+            <input type="radio" name="q5" value="A" required> A. factorial()<br>
+            <input type="radio" name="q5" value="B"> B. print()<br>
+            <input type="radio" name="q5" value="C"> C. seed()<br>
+            <input type="radio" name="q5" value="D"> D. sqrt()<br>
+        </div>
+        <div class="question">
+            <p>6. What will be the output of the following Python code?</p>
+            <pre>def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)</pre>
+            <input type="radio" name="q6" value="A" required> A. error, there is more than one return statement in a single try-finally block<br>
+            <input type="radio" name="q6" value="B"> B. 3<br>
+            <input type="radio" name="q6" value="C"> C. 2<br>
+            <input type="radio" name="q6" value="D"> D. 1<br>
+        </div>
+        <div class="question">
+            <p>7. What will be the output of the following Python code?</p>
+            <pre>x = ['ab', 'cd']
+for i in x:
+    i.upper()
+print(x)</pre>
+            <input type="radio" name="q7" value="A" required> A. [‘ab’, ‘cd’]<br>
+            <input type="radio" name="q7" value="B"> B. [‘AB’, ‘CD’]<br>
+            <input type="radio" name="q7" value="C"> C. [None, None]<br>
+            <input type="radio" name="q7" value="D"> D. none of the mentioned<br>
+        </div>
+        <div class="question">
+            <p>8. Which of the following is a Python tuple?</p>
+            <input type="radio" name="q8" value="A" required> A. [1, 2, 3]<br>
+            <input type="radio" name="q8" value="B"> B. (1, 2, 3)<br>
+            <input type="radio" name="q8" value="C"> C. {1, 2, 3}<br>
+            <input type="radio" name="q8" value="D"> D. {}<br>
+        </div>
+        <div class="question">
+            <p>9. What will be the output of the following Python expression? round(4.576)</p>
+            <input type="radio" name="q9" value="A" required> A. 4.5<br>
+            <input type="radio" name="q9" value="B"> B. 5<br>
+            <input type="radio" name="q9" value="C"> C. 4<br>
+            <input type="radio" name="q9" value="D"> D. 4.6<br>
+        </div>
+        <div class="question">
+            <p>10. What will be the output of the following Python code?</p>
+            <pre>print("abc DEF".capitalize())</pre>
+            <input type="radio" name="q10" value="A" required> A. abc def<br>
+            <input type="radio" name="q10" value="B"> B. ABC DEF<br>
+            <input type="radio" name="q10" value="C"> C. Abc def<br>
+            <input type="radio" name="q10" value="D"> D. Abc Def<br>
+        </div>
+        <div class="question">
+            <p>11. Bitwise ___ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.</p>
+            <input type="radio" name="q11" value="A" required> A. OR<br>
+            <input type="radio" name="q11" value="B"> B. AND<br>
+            <input type="radio" name="q11" value="C"> C. XOR<br>
+            <input type="radio" name="q11" value="D"> D. NOT<br>
+        </div>
+        <div class="question">
+            <p>12. What will be the output of the following Python code?</p>
+            <pre>def f(i, values = []):
+    values.append(i)
+    return values
+ 
+f(1)
+f(2)
+v = f(3)
+print(v)</pre>
+            <input type="radio" name="q12" value="A" required> A. [1] [2] [3]<br>
+            <input type="radio" name="q12" value="B"> B. [1] [1, 2] [1, 2, 3]<br>
+            <input type="radio" name="q12" value="C"> C. [1, 2, 3]<br>
+            <input type="radio" name="q12" value="D"> D. 1 2 3<br>
+        </div>
+        <div class="question">
+            <p>13. How many except statements can a try-except block have?</p>
+            <input type="radio" name="q13" value="A" required> A. zero<br>
+            <input type="radio" name="q13" value="B"> B. one<br>
+            <input type="radio" name="q13" value="C"> C. more than one<br>
+            <input type="radio" name="q13" value="D"> D. more than zero<br>
+        </div>
+        <div class="question">
+            <p>14. Is the following Python code valid?</p>
+            <pre>try:
+    # Do something
+except:
+    pass</pre>
+            <input type="radio" name="q14" value="A" required> A. No, it will throw an error<br>
+            <input type="radio" name="q14" value="B"> B. Yes, it is valid<br>
+            <input type="radio" name="q14" value="C"> C. Yes, but it is not recommended<br>
+            <input type="radio" name="q14" value="D"> D. None of the mentioned<br>
+        </div>
+        <div class="question">
+            <p>15. Which of the following is an invalid operation in Python?</p>
+            <input type="radio" name="q15" value="A" required> A. Addition of string and integer<br>
+            <input type="radio" name="q15" value="B"> B. Comparison of string and integer<br>
+            <input type="radio" name="q15" value="C"> C. Subtraction of two strings<br>
+            <input type="radio" name="q15" value="D"> D. All of the above<br>
+        </div>
+        <div class="question">
+            <p>16. Which of the following statement is true?</p>
+            <input type="radio" name="q16" value="A" required> A. The tuple is mutable<br>
+            <input type="radio" name="q16" value="B"> B. The list is immutable<br>
+            <input type="radio" name="q16" value="C"> C. The dictionary is ordered<br>
+            <input type="radio" name="q16" value="D"> D. None of the above<br>
+        </div>
+        <div class="question">
+            <p>17. What is the output of the following Python code?</p>
+            <pre>print(1 == True)</pre>
+            <input type="radio" name="q17" value="A" required> A. True<br>
+            <input type="radio" name="q17" value="B"> B. False<br>
+            <input type="radio" name="q17" value="C"> C. None<br>
+            <input type="radio" name="q17" value="D"> D. TypeError<br>
+        </div>
+        <div class="question">
+            <p>18. Which of the following is used to create a new object in Python?</p>
+            <input type="radio" name="q18" value="A" required> A. constructor<br>
+            <input type="radio" name="q18" value="B"> B. class<br>
+            <input type="radio" name="q18" value="C"> C. instance<br>
+            <input type="radio" name="q18" value="D"> D. All of the above<br>
+        </div>
+        <div class="question">
+            <p>19. Which keyword is used to create a function in Python?</p>
+            <input type="radio" name="q19" value="A" required> A. function<br>
+            <input type="radio" name="q19" value="B"> B. def<br>
+            <input type="radio" name="q19" value="C"> C. define<br>
+            <input type="radio" name="q19" value="D"> D. fun<br>
+        </div>
+        <div class="question">
+            <p>20. What does the len() function do?</p>
+            <input type="radio" name="q20" value="A" required> A. Returns the length of an object<br>
+            <input type="radio" name="q20" value="B"> B. Returns the size of an object<br>
+            <input type="radio" name="q20" value="C"> C. Returns the data type of an object<br>
+            <input type="radio" name="q20" value="D"> D. None of the above<br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+    <script src="pythontest.js"></script>
+</body>
+</html>

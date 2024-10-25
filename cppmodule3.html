@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>C++ Module 3 - Control Statements</title>
+    <style>
+        .video-button {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-button:hover {
+            background-color: #0056b3;
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>C++ Module 3: Control Statements</h1>
+        <nav>
+            <ul>
+                <li><a href="cppmodule1.html">Module 1</a></li>
+                <li><a href="cppmodule2.html">Module 2</a></li>
+                <li><a href="cppmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Introduction to Control Statements</h2>
+        <p>
+            Control statements in C++ allow us to alter the flow of execution of our programs based on certain conditions or repetitions. These statements help in making decisions, looping through a block of code multiple times, or jumping to a specific part of the code.
+        </p>
+        <div class="video-container">
+            <a href="https://youtu.be/qv1QvdhDso0?si=qV-ZOWweGJBS8yeB" class="video-button" target="_blank">Watch Video on Control Statements</a>
+        </div>
+
+        <h2>2. Conditional Statements</h2>
+        <p>
+            Conditional statements help to make decisions in a program based on specific conditions. The most commonly used conditional statements are:
+        </p>
+        <ul>
+            <li><strong>if Statement:</strong> Executes a block of code if the condition is true.
+                <pre><code>
+int age = 18;
+if (age >= 18) {
+    cout << "You are eligible to vote.";
+}
+                </code></pre>
+            </li>
+            <li><strong>if-else Statement:</strong> Executes one block of code if the condition is true, otherwise executes another block.
+                <pre><code>
+int num = 5;
+if (num % 2 == 0) {
+    cout << "Even number.";
+} else {
+    cout << "Odd number.";
+}
+                </code></pre>
+            </li>
+            <li><strong>else if Ladder:</strong> Used for multiple conditions.
+                <pre><code>
+int score = 75;
+if (score >= 90) {
+    cout << "A grade";
+} else if (score >= 75) {
+    cout << "B grade";
+} else {
+    cout << "C grade";
+}
+                </code></pre>
+            </li>
+            <li><strong>switch Statement:</strong> Allows multi-way branching based on the value of a variable.
+                <pre><code>
+int day = 3;
+switch (day) {
+    case 1: cout << "Monday"; break;
+    case 2: cout << "Tuesday"; break;
+    case 3: cout << "Wednesday"; break;
+    default: cout << "Invalid day";
+}
+                </code></pre>
+            </li>
+        </ul>
+        <div class="video-container">
+            <a href="https://youtu.be/nacpUa54mCI?si=1Y-rIz9rhzk9SVD_" class="video-button" target="_blank">Watch Video on Conditional Statements</a>
+        </div>
+
+        <h2>3. Looping Statements</h2>
+        <p>
+            Looping statements in C++ allow you to execute a block of code repeatedly as long as a certain condition is met. The main types of loops are:
+        </p>
+        <ul>
+            <li><strong>for Loop:</strong> Best used when the number of iterations is known.
+                <pre><code>
+for (int i = 1; i <= 5; i++) {
+    cout << i << " ";
+}
+                </code></pre>
+            </li>
+            <li><strong>while Loop:</strong> Repeats a block of code as long as the condition is true.
+                <pre><code>
+int i = 1;
+while (i <= 5) {
+    cout << i << " ";
+    i++;
+}
+                </code></pre>
+            </li>
+            <li><strong>do-while Loop:</strong> Similar to a while loop, but ensures the code runs at least once.
+                <pre><code>
+int i = 1;
+do {
+    cout << i << " ";
+    i++;
+} while (i <= 5);
+                </code></pre>
+            </li>
+        </ul>
+        <div class="video-container">
+            <a href="https://youtu.be/IlIn_D1RT7M?si=DNztGxqrUSQmUvbz" class="video-button" target="_blank">Watch Video on Looping Statements</a>
+        </div>
+
+        <h2>4. Jump Statements</h2>
+        <p>
+            Jump statements in C++ help to change the normal flow of execution in loops or functions. Commonly used jump statements are:
+        </p>
+        <ul>
+            <li><strong>break:</strong> Exits the loop or switch statement.
+                <pre><code>
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        break;
+    }
+    cout << i << " ";
+}
+                </code></pre>
+            </li>
+            <li><strong>continue:</strong> Skips the current iteration of the loop and continues with the next.
+                <pre><code>
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) {
+        continue;
+    }
+    cout << i << " ";
+}
+                </code></pre>
+            </li>
+            <li><strong>return:</strong> Exits a function and optionally returns a value.
+                <pre><code>
+int add(int a, int b) {
+    return a + b;
+}
+                </code></pre>
+            </li>
+        </ul>
+        <div class="video-container">
+            <a href="https://youtu.be/G80-j_xnE_8?si=bUVJjD13dlGGnkKz" class="video-button" target="_blank">Watch Video on Jump Statements</a>
+        </div>
+
+        <h2>5. Example: Control Statements in Action</h2>
+        <p>Here is a simple program that demonstrates the use of if-else and loops:</p>
+        <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number;
+    cout &lt;&lt; "Enter a positive number: ";
+    cin &gt;&gt; number;
+
+    if (number > 0) {
+        cout &lt;&lt; "Counting from 1 to " &lt;&lt; number &lt;&lt; ": " &lt;&lt; endl;
+        for (int i = 1; i &lt;= number; i++) {
+            cout &lt;&lt; i &lt;&lt; " ";
+        }
+    } else {
+        cout &lt;&lt; "Please enter a positive number." &lt;&lt; endl;
+    }
+    return 0;
+}
+        </code></pre>
+        <p>This program prompts the user to enter a positive number and counts from 1 to the entered number using an if-else condition and a for loop.</p>
+
+        <h2>6. Conclusion</h2>
+        <p>Control statements are fundamental to creating dynamic and efficient programs in C++. They allow you to control the flow of execution based on conditions and repetitions. Practice using different control statements to master their application in real-world scenarios.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

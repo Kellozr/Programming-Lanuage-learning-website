@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Quiz</title>
+    <link rel="stylesheet" href="cpptest.css"> <!-- Link to your CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- Include jsPDF library -->
+</head>
+<body>
+    <h1>C++ Quiz</h1>
+    <form id="quiz-form">
+        <div>
+            <p>1. What is C++?</p>
+            <input type="radio" name="q1" value="A"> A) A scripting language<br>
+            <input type="radio" name="q1" value="B"> B) A general-purpose programming language<br>
+            <input type="radio" name="q1" value="C"> C) A markup language<br>
+            <input type="radio" name="q1" value="D"> D) A database management system<br>
+        </div>
+
+        <div>
+            <p>2. Who developed C++?</p>
+            <input type="radio" name="q2" value="A"> A) Dennis Ritchie<br>
+            <input type="radio" name="q2" value="B"> B) Ken Thompson<br>
+            <input type="radio" name="q2" value="C"> C) Bjarne Stroustrup<br>
+            <input type="radio" name="q2" value="D"> D) Guido van Rossum<br>
+        </div>
+
+        <div>
+            <p>3. Which of the following is a key feature of C++?</p>
+            <input type="radio" name="q3" value="A"> A) Garbage collection<br>
+            <input type="radio" name="q3" value="B"> B) Object-oriented programming<br>
+            <input type="radio" name="q3" value="C"> C) Interpreted execution<br>
+            <input type="radio" name="q3" value="D"> D) Purely functional programming<br>
+        </div>
+
+        <div>
+            <p>4. Which of the following is the entry point of a C++ program?</p>
+            <input type="radio" name="q4" value="A"> A) start()<br>
+            <input type="radio" name="q4" value="B"> B) int main()<br>
+            <input type="radio" name="q4" value="C"> C) void program()<br>
+            <input type="radio" name="q4" value="D"> D) include()<br>
+        </div>
+
+        <div>
+            <p>5. Which of the following correctly outputs "Hello, World!" in C++?</p>
+            <input type="radio" name="q5" value="A"> A) std::cout << "Hello, World!" << std::endl;<br>
+            <input type="radio" name="q5" value="B"> B) printf("Hello, World!");<br>
+            <input type="radio" name="q5" value="C"> C) System.out.println("Hello, World!");<br>
+            <input type="radio" name="q5" value="D"> D) print("Hello, World!")<br>
+        </div>
+
+        <div>
+            <p>6. Which library is included with #include &lt;iostream&gt;?</p>
+            <input type="radio" name="q6" value="A"> A) Input/output stream library<br>
+            <input type="radio" name="q6" value="B"> B) Math library<br>
+            <input type="radio" name="q6" value="C"> C) Graphics library<br>
+            <input type="radio" name="q6" value="D"> D) Networking library<br>
+        </div>
+
+        <div>
+            <p>7. Which of the following is NOT a primitive data type in C++?</p>
+            <input type="radio" name="q7" value="A"> A) int<br>
+            <input type="radio" name="q7" value="B"> B) double<br>
+            <input type="radio" name="q7" value="C"> C) std::string<br>
+            <input type="radio" name="q7" value="D"> D) char<br>
+        </div>
+
+        <div>
+            <p>8. Which data type is used to store Boolean values?</p>
+            <input type="radio" name="q8" value="A"> A) int<br>
+            <input type="radio" name="q8" value="B"> B) bool<br>
+            <input type="radio" name="q8" value="C"> C) float<br>
+            <input type="radio" name="q8" value="D"> D) char<br>
+        </div>
+
+        <div>
+            <p>9. What does the following code do: const int age = 25;?</p>
+            <input type="radio" name="q9" value="A"> A) Creates a modifiable integer variable<br>
+            <input type="radio" name="q9" value="B"> B) Creates a constant integer variable<br>
+            <input type="radio" name="q9" value="C"> C) Causes a syntax error<br>
+            <input type="radio" name="q9" value="D"> D) Initializes a floating-point constant<br>
+        </div>
+
+        <div>
+            <p>10. Which of the following is a correct way to declare an array of integers with 5 elements in C++?</p>
+            <input type="radio" name="q10" value="A"> A) int arr(5);<br>
+            <input type="radio" name="q10" value="B"> B) int arr[5];<br>
+            <input type="radio" name="q10" value="C"> C) array<int> arr = {5};<br>
+            <input type="radio" name="q10" value="D"> D) int arr;<br>
+        </div>
+
+        <div>
+            <p>11. Which operator is used to check for equality in C++?</p>
+            <input type="radio" name="q11" value="A"> A) =<br>
+            <input type="radio" name="q11" value="B"> B) ==<br>
+            <input type="radio" name="q11" value="C"> C) !=<br>
+            <input type="radio" name="q11" value="D"> D) <=<br>
+        </div>
+
+        <div>
+            <p>12. What is the output of the following code?</p>
+            <pre>
+            int x = 5, y = 10;
+            if (x < y)
+                std::cout << "x is less than y";
+            else
+                std::cout << "x is greater than or equal to y";</pre>
+            <input type="radio" name="q12" value="A"> A) x is greater than or equal to y<br>
+            <input type="radio" name="q12" value="B"> B) x is less than y<br>
+            <input type="radio" name="q12" value="C"> C) x is greater than y<br>
+            <input type="radio" name="q12" value="D"> D) No output<br>
+        </div>
+
+        <div>
+            <p>13. Which of the following loop structures guarantees that the loop body is executed at least once?</p>
+            <input type="radio" name="q13" value="A"> A) for loop<br>
+            <input type="radio" name="q13" value="B"> B) while loop<br>
+            <input type="radio" name="q13" value="C"> C) do-while loop<br>
+            <input type="radio" name="q13" value="D"> D) All of the above<br>
+        </div>
+
+        <div>
+            <p>14. Which of the following statements is used to terminate a loop prematurely?</p>
+            <input type="radio" name="q14" value="A"> A) return<br>
+            <input type="radio" name="q14" value="B"> B) exit<br>
+            <input type="radio" name="q14" value="C"> C) break<br>
+            <input type="radio" name="q14" value="D"> D) continue<br>
+        </div>
+
+        <div>
+            <p>15. What is function overloading?</p>
+            <input type="radio" name="q15" value="A"> A) Defining multiple functions with the same name but different return types<br>
+            <input type="radio" name="q15" value="B"> B) Defining multiple functions with the same name but different parameter types or numbers<br>
+            <input type="radio" name="q15" value="C"> C) Defining functions inside another function<br>
+            <input type="radio" name="q15" value="D"> D) Creating a function that can only be called once<br>
+        </div>
+
+        <div>
+            <p>16. Which of the following can be used to specify default values for function arguments in C++?</p>
+            <input type="radio" name="q16" value="A"> A) const<br>
+            <input type="radio" name="q16" value="B"> B) default<br>
+            <input type="radio" name="q16" value="C"> C) Specifying values in the function declaration<br>
+            <input type="radio" name="q16" value="D"> D) Using #define<br>
+        </div>
+
+        <div>
+            <p>17. What is recursion in C++?</p>
+            <input type="radio" name="q17" value="A"> A) A function calling itself<br>
+            <input type="radio" name="q17" value="B"> B) A function that never ends<br>
+            <input type="radio" name="q17" value="C"> C) A loop inside a function<br>
+            <input type="radio" name="q17" value="D"> D) A function that calls multiple other functions<br>
+        </div>
+
+        <div>
+            <p>18. Which of the following is used to get input from the user in C++?</p>
+            <input type="radio" name="q18" value="A"> A) std::cout<br>
+            <input type="radio" name="q18" value="B"> B) std::cin<br>
+            <input type="radio" name="q18" value="C"> C) print()<br>
+            <input type="radio" name="q18" value="D"> D) scanf()<br>
+        </div>
+
+        <div>
+            <p>19. Which of the following preprocessor directives is used to include a library in C++?</p>
+            <input type="radio" name="q19" value="A"> A) #define<br>
+            <input type="radio" name="q19" value="B"> B) #include<br>
+            <input type="radio" name="q19" value="C"> C) #if<br>
+            <input type="radio" name="q19" value="D"> D) #import<br>
+        </div>
+
+        <div>
+            <p>20. What will be the output of the following code?</p>
+            <pre>
+            #define PI 3.14
+            int main() {
+                std::cout << PI;
+                return 0;
+            }</pre>
+            <input type="radio" name="q20" value="A"> A) 3.14<br>
+            <input type="radio" name="q20" value="B"> B) PI<br>
+            <input type="radio" name="q20" value="C"> C) Error<br>
+            <input type="radio" name="q20" value="D"> D) No output<br>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+    <button id="download-cert" style="display: none;" onclick="generatePDF()">Download Certificate</button>
+
+    <script>
+        function calculateScore() {
+            const answers = {
+                q1: "B", q2: "C", q3: "B", q4: "B", q5: "A", q6: "A",
+                q7: "C", q8: "B", q9: "B", q10: "B", q11: "B", q12: "B",
+                q13: "C", q14: "C", q15: "B", q16: "C", q17: "A", q18: "B",
+                q19: "B", q20: "A"
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = 'q' + i;
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Your score: ${score} out of ${totalQuestions}`;
+
+            if (score > totalQuestions * 0.8) {
+                document.getElementById('download-cert').style.display = 'block';
+            } else {
+                document.getElementById('download-cert').style.display = 'none';
+            }
+        }
+
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            doc.text("C++ Quiz Certificate", 20, 20);
+            doc.text("Congratulations! You scored above 80%.", 20, 30);
+            doc.save("certificate.pdf");
+        }
+    </script>
+</body>
+</html>

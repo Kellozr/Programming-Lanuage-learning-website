@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Module 1 - Introduction to Java, Variables, Data Types, and Control Statements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .video-button {
+            display: inline-block;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Some padding */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            margin: 10px 0; /* Margin above and below the button */
+        }
+
+        .video-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Module 1: Introduction to Java, Variables, Data Types, and Control Statements</h1>
+        <nav>
+            <ul>
+                <li><a href="javamodule1.html">Module 1</a></li>
+                <li><a href="javamodule2.html">Module 2</a></li>
+                <li><a href="javamodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2><a href="#introduction">1. Introduction to Java</a></h2>
+        <div id="introduction">
+            <p>
+                Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. It is known for its portability, performance, and robustness. Java applications can be run on any device that has a Java Virtual Machine (JVM) installed, making it a popular choice for developing cross-platform applications.
+            </p>
+            <p>
+                Key features of Java include:
+            </p>
+            <ul>
+                <li>Object-Oriented: Everything in Java is an object, which helps in code reusability and modularity.</li>
+                <li>Platform Independence: Java code can run on any platform without the need for recompilation.</li>
+                <li>Automatic Memory Management: Java has built-in garbage collection that helps manage memory efficiently.</li>
+                <li>Rich API: Java provides a vast array of libraries and frameworks for various applications.</li>
+            </ul>
+            <p>Example - Basic Java Program:</p>
+            <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </code></pre>
+            <p>This simple program prints "Hello, World!" to the console.</p>
+            <a href="https://youtu.be/yRpLlJmRo2w?si=CLWQppmLgx5w6fPq" class="video-button" target="_blank">
+                <span>Watch Video: Introduction to Java</span>
+            </a>
+        </div>
+
+        <h2><a href="#variables">2. Variables and Data Types</a></h2>
+        <div id="variables">
+            <p>
+                Variables in Java are used to store data values. Each variable has a data type that defines the kind of data it can hold. Common data types in Java include:
+            </p>
+            <ul>
+                <li><code>int</code>: For storing integer values (e.g., 10, -5).</li>
+                <li><code>double</code>: For storing decimal values (e.g., 10.5, -3.14).</li>
+                <li><code>char</code>: For storing a single character (e.g., 'A', 'b').</li>
+                <li><code>boolean</code>: For storing true or false values.</li>
+                <li><code>String</code>: For storing a sequence of characters (e.g., "Hello").</li>
+            </ul>
+            <p>Example - Declaring Variables:</p>
+            <pre><code>
+public class VariableExample {
+    public static void main(String[] args) {
+        int age = 25;
+        double salary = 50000.50;
+        char grade = 'A';
+        boolean isJavaFun = true;
+        String name = "John";
+        
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+            </code></pre>
+            <p>This example demonstrates how to declare and initialize different types of variables in Java.</p>
+            <a href="https://youtu.be/X0zdAG7gfgs?si=VJZz7b7OvwVF47qy" class="video-button" target="_blank">
+                <span>Watch Video: Variables and Data Types</span>
+            </a>
+        </div>
+
+        <h2><a href="#operators">3. Operators in Java</a></h2>
+        <div id="operators">
+            <p>
+                Operators are special symbols that perform operations on variables and values. Java supports several types of operators:
+            </p>
+            <ul>
+                <li><strong>Arithmetic Operators:</strong> Used to perform basic mathematical operations like addition (+), subtraction (-), multiplication (*), and division (/).</li>
+                <li><strong>Relational Operators:</strong> Used to compare two values (e.g., ==, !=, &gt;, &lt;).</li>
+                <li><strong>Logical Operators:</strong> Used to combine multiple boolean expressions (e.g., &&, ||, !).</li>
+                <li><strong>Assignment Operators:</strong> Used to assign values to variables (e.g., =, +=, -=).</li>
+            </ul>
+            <p>Example - Using Operators:</p>
+            <pre><code>
+public class OperatorExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        
+        int sum = a + b; // Addition
+        boolean isGreater = a > b; // Relational
+        boolean isTrue = (a > b) && (b < 10); // Logical
+        
+        System.out.println("Sum: " + sum);
+        System.out.println("Is A greater than B? " + isGreater);
+        System.out.println("Is A greater than B and B less than 10? " + isTrue);
+    }
+}
+            </code></pre>
+            <p>This example shows how to use various operators in Java.</p>
+            <a href="https://youtu.be/pnn2VTSr1Ko?si=dx0O7zDp3Ojwwjrp" class="video-button" target="_blank">
+                <span>Watch Video: Operators in Java</span>
+            </a>
+        </div>
+
+        <h2><a href="#controlStatements">4. Control Statements</a></h2>
+        <div id="controlStatements">
+            <p>
+                Control statements allow you to dictate the flow of execution of a Java program. The primary control statements include:
+            </p>
+            <ul>
+                <li><strong>If Statement:</strong> Executes a block of code if its condition is true.</li>
+                <li><strong>Switch Statement:</strong> Executes a block of code based on the value of a variable.</li>
+                <li><strong>For Loop:</strong> Repeats a block of code a specified number of times.</li>
+                <li><strong>While Loop:</strong> Repeats a block of code while its condition is true.</li>
+            </ul>
+            <p>Example - Using Control Statements:</p>
+            <pre><code>
+public class ControlStatementExample {
+    public static void main(String[] args) {
+        int number = 10;
+        
+        // If Statement
+        if (number > 0) {
+            System.out.println("Number is positive.");
+        }
+        
+        // Switch Statement
+        switch (number) {
+            case 1:
+                System.out.println("Number is one.");
+                break;
+            case 10:
+                System.out.println("Number is ten.");
+                break;
+            default:
+                System.out.println("Number is neither one nor ten.");
+        }
+        
+        // For Loop
+        System.out.println("Numbers from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+            </code></pre>
+            <p>This example illustrates how to use different control statements in Java.</p>
+            <a href="https://youtu.be/I5srDu75h_M?si=I3vZbNZKT5eYbLTZ" class="video-button" target="_blank">
+                <span>Watch Video: Control Statements in Java</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javamodule.css">
+    <title>Python Module 3 - Data Structures and Modules</title>
+    <style>
+        /* Style for link buttons */
+        .button-link {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: white; /* Text color */
+            background-color: green; /* Background color */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: darkgreen; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Module 3: Data Structures and Modules</h1>
+        <nav>
+            <ul>
+                <li><a href="pythonmodule1.html">Module 1</a></li>
+                <li><a href="pythonmodule2.html">Module 2</a></li>
+                <li><a href="pythonmodule3.html">Module 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>1. Data Structures</h2>
+        <p>
+            Data structures are essential for organizing and storing data efficiently, allowing you to perform various operations like adding, removing, or updating data. In Python, there are several built-in data structures that serve different purposes.
+        </p>
+
+        <h3>1.1 Lists</h3>
+        <p>
+            Lists are one of the most versatile data structures in Python. They are ordered collections, meaning the items have a defined order, and they can be changed (mutable). Lists can store elements of different types (e.g., integers, strings, floats).
+        </p>
+        <pre><code>
+# Creating a list
+fruits = ["apple", "banana", "cherry", "orange"]
+
+# Accessing list elements
+print(fruits[0])  # Output: apple
+
+# Modifying list elements
+fruits[1] = "blueberry"
+print(fruits)  # Output: ['apple', 'blueberry', 'cherry', 'orange']
+
+# Adding elements to the list
+fruits.append("kiwi")
+print(fruits)  # Output: ['apple', 'blueberry', 'cherry', 'orange', 'kiwi']
+
+# Removing elements from the list
+fruits.remove("cherry")
+print(fruits)  # Output: ['apple', 'blueberry', 'orange', 'kiwi']
+        </code></pre>
+        <a href="https://youtu.be/eF6nK5bSlmg?si=161BGgu4WbZPeARG" class="button-link">Watch Video: Lists in Python</a>
+
+        <h3>1.2 Tuples</h3>
+        <p>
+            Tuples are similar to lists, but they are immutable, meaning once created, their values cannot be changed. Tuples are useful for storing data that shouldn't change, such as coordinates or configuration values.
+        </p>
+        <pre><code>
+# Creating a tuple
+coordinates = (10, 20)
+
+# Accessing tuple elements
+print(coordinates[0])  # Output: 10
+
+# Tuples are immutable, so the following line would result in an error:
+# coordinates[0] = 15
+
+# You can also use tuples for multiple assignments:
+x, y = coordinates
+print(x, y)  # Output: 10 20
+        </code></pre>
+        <a href="https://youtu.be/PipsOUDKrVk?si=9NvT8ZG_KRPI2s3s" class="button-link">Watch Video: Tuples in Python</a>
+
+        <h3>1.3 Dictionaries</h3>
+        <p>
+            Dictionaries are unordered collections of key-value pairs. They are ideal for storing data where each element has a unique identifier (key). You can quickly access, add, or modify elements using keys.
+        </p>
+        <pre><code>
+# Creating a dictionary
+student = {
+    "name": "Alice",
+    "age": 21,
+    "major": "Computer Science"
+}
+
+# Accessing values using keys
+print(student["name"])  # Output: Alice
+
+# Modifying a value
+student["age"] = 22
+print(student)  # Output: {'name': 'Alice', 'age': 22, 'major': 'Computer Science'}
+
+# Adding a new key-value pair
+student["graduation_year"] = 2025
+print(student)  # Output: {'name': 'Alice', 'age': 22, 'major': 'Computer Science', 'graduation_year': 2025}
+        </code></pre>
+        <a href="https://youtu.be/j2G68uQtOwM?si=pJE8UHAP5-jnjzU0" class="button-link">Watch Video: Dictionaries in Python</a>
+
+        <h3>1.4 Sets</h3>
+        <p>
+            Sets are collections of unique elements, meaning they automatically eliminate duplicate items. They are unordered and allow for efficient membership testing and operations like union, intersection, and difference.
+        </p>
+        <pre><code>
+# Creating a set
+unique_numbers = {1, 2, 3, 4, 4, 5}
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5}
+
+# Adding an element to a set
+unique_numbers.add(6)
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5, 6}
+
+# Removing an element from a set
+unique_numbers.discard(3)
+print(unique_numbers)  # Output: {1, 2, 4, 5, 6}
+        </code></pre>
+        <a href="https://youtu.be/l3kCO8cVA6o?si=2tAhybc1mNGeAEez" class="button-link">Watch Video: Sets in Python</a>
+
+        <h2>2. Modules</h2>
+        <p>
+            Python modules are files containing Python code, which may include functions, classes, and variables. They help in organizing code into smaller, reusable components and allow you to break down complex applications.
+        </p>
+
+        <h3>2.1 Importing Modules</h3>
+        <p>
+            Python has a rich library of built-in modules that you can use for various tasks like math operations, date-time handling, and more. You can import these using the <code>import</code> statement.
+        </p>
+        <pre><code>
+import math
+
+# Using a function from the math module
+print(math.sqrt(16))  # Output: 4.0
+
+# Importing specific functions
+from datetime import datetime
+print(datetime.now())  # Output: Current date and time
+        </code></pre>
+
+        <h3>2.2 Creating Your Own Module</h3>
+        <p>
+            You can create your own module by saving Python functions in a file with a <code>.py</code> extension. Then, you can import this file in other scripts and use the functions defined inside.
+        </p>
+        <pre><code>
+# my_module.py
+def greet(name):
+    return f"Hello, {name}!"
+
+# In another file:
+import my_module
+print(my_module.greet("Alice"))  # Output: Hello, Alice!
+        </code></pre>
+        <a href="https://youtu.be/5SGqHlQTxLA?si=22VVlB463F4SHl70" class="button-link">Watch Video: Creating Your Own Module</a>
+
+        <h3>2.3 Commonly Used Python Modules</h3>
+        <ul>
+            <li><strong>os</strong>: Provides functions for interacting with the operating system.</li>
+            <li><strong>random</strong>: Offers methods to generate random numbers, shuffle lists, etc.</li>
+            <li><strong>re</strong>: Supports regular expressions for pattern matching.</li>
+            <li><strong>json</strong>: Helps in encoding and decoding JSON data.</li>
+        </ul>
+
+        <h2>3. Test Your Knowledge</h2>
+        <p>Take this quiz to assess your understanding of Data Structures and Modules:</p>
+        <form action="submit_test.html" method="post">
+            <label for="q1">1. What is the difference between a list and a tuple in Python?</label>
+            <input type="text" id="q1" name="q1" required>
+            <br>
+            <label for="q2">2. How do you create a set in Python?</label>
+            <input type="text" id="q2" name="q2" required>
+            <br>
+            <label for="q3">3. Explain how to import a specific function from a module.</label>
+            <input type="text" id="q3" name="q3" required>
+            <br>
+            <label for="q4">4. Give an example of using a dictionary to store student information.</label>
+            <input type="text" id="q4" name="q4" required>
+            <br>
+            <a href="submit_test.html" class="button-link">Submit Test</a>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Code Wiz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
